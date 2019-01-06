@@ -16,7 +16,7 @@ This script scans directory for python scripts and installs needed dependencies
 ### Requirements
 
 * pyhton 3.4 or higher.
-* pip 10 or higher.
+* pip 1.1 or higher.
 
 ## Author
 * **Ilia Nikishin** ([Gibitop](https://github.com/Gibitop)).
