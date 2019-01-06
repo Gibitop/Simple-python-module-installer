@@ -9,8 +9,8 @@ This script scans directory for python scripts and installs needed dependencies
 
 ## Usage
 
-* `python3 spmi.py ` - Installs modules for the directory it's running from.
-* `python3 spmi.py -d ~/test ` - Installs modules for the `~/test` directory.
+* `python3 spmi.py` - Installs modules for the directory it's running from.
+* `python3 spmi.py -d ~/test` - Installs modules for the `~/test` directory.
 * `python3 spmi.py -c 'pip3 install'` - uses `pip3 install` instead of default `pip install`.
 
 ### Prerequisites
@@ -23,7 +23,7 @@ This script scans directory for python scripts and installs needed dependencies
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [liscense](LICENSE) file for details.
 
 ## Acknowledgments
 * This script won't work if the name of package you `import` doesn't match the name of package you `pip install`.
