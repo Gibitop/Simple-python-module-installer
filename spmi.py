@@ -26,10 +26,10 @@
 
 
 # Default install command
-cmd = 'pip install' 
+cmd = 'pip3 install' 
 
 
-from importlib import import_module
+from importlib.util import find_spec
 from contextlib import redirect_stdout
 from os import listdir
 from os.path import isfile
@@ -72,10 +72,7 @@ def main():
                 lib = lib.split('.')[0]
                 if lib not in libs and lib + '.py' not in dirlist:
                     libs.append(lib)
-                    try:
-                        with redirect_stdout(None):
-                            import_module(lib)
-                    except ModuleNotFoundError:
+                    if find_spec(lib) is None:
                         call(cmd.split(' ') + [lib])
 
 if __name__ == "__main__":
