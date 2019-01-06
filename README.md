@@ -13,7 +13,7 @@ This script scans directory for python scripts and installs needed dependencies
 * `python3 spmi.py -d ~/test` - Installs modules for the `~/test` directory.
 * `python3 spmi.py -c 'pip3 install'` - uses `pip3 install` instead of default `pip install`.
 
-### Prerequisites
+### Requirements
 
 * pyhton 3.7 or higher.
 * pip 10 or higher.
